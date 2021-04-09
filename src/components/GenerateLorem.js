@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import paragraphData from "./data";
+import classes from "./generateLorem.module.css";
 
 const GenerateLorem = () => {
   // 2 hooks 1 for data and one for input
@@ -22,6 +23,8 @@ const GenerateLorem = () => {
     setData(paragraphData.slice(0, amountGenerate));
     console.log("form submitted");
   };
+
+  // Returns ***********************
 
   return (
     <section>
